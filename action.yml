@@ -1,11 +1,16 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Edward'
+description: 'Get PR state'
+author: 'NVG'
 inputs:
-  milliseconds: # change this
+   GITHUB_TOKEN :
+    description: 'GitHub Token'
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+   PullRequestNumber :
+    description: 'the pull request number'
+    required: true
+outputs:
+  pullRequestState:
+    description: 'status of the pull request'
 runs:
   using: 'node12'
   main: 'dist/index.js'
