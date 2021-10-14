@@ -6,7 +6,7 @@ inputs:
     description: 'the pull request number'
     required: true
    GITHUB_TOKEN :
-    description: 'GitHub Token'
+    description: 'GitHub Tokena'
     required: true
 outputs:
   pullrequeststate:
