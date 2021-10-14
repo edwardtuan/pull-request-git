@@ -9,7 +9,7 @@ inputs:
     description: 'the pull request number'
     required: true
 outputs:
-  pullRequestState:
+  pullrequeststate:
     description: 'status of the pull request'
 runs:
   using: 'node12'

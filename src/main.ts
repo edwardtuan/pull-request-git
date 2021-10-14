@@ -11,7 +11,7 @@ async function run(): Promise<void> {
       pull_number: parseInt(pullRequestNumber)
     })
 
-    core.setOutput('pullRequestState', pullRequest.state)
+    core.setOutput('pullrequeststate', pullRequest.state)
   } catch (error) {
     if (error instanceof Error) core.setFailed(error.message)
   }
