@@ -10,10 +10,7 @@ async function run(): Promise<void> {
       repo: github.context.repo.repo,
       pull_number: parseInt(pullRequestNumber)
     })
-    if (!pullRequest) {
-      core.info('Cannot find the pull request')
-      return
-    }
+
     core.setOutput('pullRequestState', pullRequest.state)
   } catch (error) {
     if (error instanceof Error) core.setFailed(error.message)
