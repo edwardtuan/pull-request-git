@@ -2,11 +2,11 @@ name: 'Edward'
 description: 'Get PR state'
 author: 'NVG'
 inputs:
-   GITHUB_TOKEN :
-    description: 'GitHub Token'
-    required: true
    PullRequestNumber :
     description: 'the pull request number'
+    required: true
+   GITHUB_TOKEN :
+    description: 'GitHub Token'
     required: true
 outputs:
   pullrequeststate:
